@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>Chúc Mừng Ngày Phụ Nữ Việt Nam</title>
+    <style>
+        /*CSS MẶC ĐỊNH*/
+        
+        .container {
+            background-color: yellow;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin: 0 auto;
+        }
+        
+        #womenday {
+            animation-name: move;
+            animation-duration: 3s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        
+        img {
+            height: 400px;
+            width: 500px;
+        }
+        /*RESPONSIVE WEB DESIGN MOBILE FISRT*/
+        /* Dành cho điện thoại */
+        
+        @media all and (min-width: 320px) {
+            .container {
+                background-color: red;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin: 0 auto;
+            }
+            @keyframes move {
+                from {
+                    top: 0px;
+                }
+                to {
+                    top: 100px;
+                }
+            }
+            img {
+                height: 250px;
+                width: 350px;
+                background-size: cover;
+            }
+        }
+        /* Dành cho máy tính bảng chiều dọc */
+        
+        @media all and (min-width: 600px) {
+            .container {
+                background-color: pink;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin: 0 auto;
+            }
+        }
+        /* Dành cho máy tính bảng chiều ngang */
+        
+        @media all and (min-width: 1024px) {
+            .container {
+                background-color: blue;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin: 0 auto;
+            }
+        }
+        /* Dành cho màn hình desktop */
+        
+        @media all and (min-width: 1280px) {
+            .container {
+                background-color: orange;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin: 0 auto;
+            }
+            @keyframes move {
+                from {
+                    left: 0px;
+                }
+                to {
+                    left: 700px;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="vietnames_womens_day" id="womenday">
+            <img src="http://thongtinkhcndaklak.vn/eakpam/AlbumPhoto/hinh-anh8bepj7/nhung-hinh-anh-dep-cua-hoa-hong-do-lang-man-so-5_tWr-d2aESkKgnk6G.jpg" alt="photo">
+        </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
