@@ -1,0 +1,21 @@
+
+If website on small devices behavior like desktop screen then you have to put this meta tag into header before
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+For media queries you can set this as
+
+this will cover your all mobile/cellphone widths
+
+    @media only screen and (min-width: 200px) and (max-width: 767px)  {
+    //Put your CSS here for 400px to 600px width devices (cover all mobile portrait width //
+
+    }
+For iPad and iPad pro you have to use
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px)  {
+    //Put your CSS here for 768px to 1024px width devices(covers all iPad portrait width //
+
+    }
+    or
+    /* responsive portrait tablet */
+@media (min-width: 768px) and (max-width: 1018px) {
